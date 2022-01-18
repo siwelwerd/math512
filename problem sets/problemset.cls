@@ -20,7 +20,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{Math 511}
+\lhead{Math 512}
 \chead{Problem Set \pset}
 \rhead{\textit{\name}}
 

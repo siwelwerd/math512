@@ -1,16 +1,16 @@
 \documentclass{problemset}
 
+
 \renewcommand{\pset}{1}
 %\renewcommand{\name}{Jane Doe}
+
+\DeclareMathOperator{\Frac}{Frac}
 
 \begin{document}
 
 
-\begin{exercise} Show the following directly from the definitions:
-\begin{enumerate}[(a)]
-\item If \(G\) is a monoid, the identity element is unique. 
-\item If \(G\) is a group, every element has a unique inverse.
-\end{enumerate}
+\begin{exercise} Let \(R\) be an integral domain, and let \(T\) be an integral domain such that \(R \subset T \subset \Frac R\).  Show that \(\Frac R = \Frac T\).
+
 \end{exercise}
 
 %\begin{solution}
@@ -18,7 +18,7 @@
 %\end{solution}
 
 \begin{exercise}
-Let \(G\) be a semigroup. Show that \(G\) is a group if and only if for all \(a,b \in G\), the equations \(ax=b\) and \(ya=b\) have solutions in \(G\).
+Let \(R\) be an integral domain, and \(S \subset R\) a multiplicative subset that does not contain \(0\). Show that if \(R\) is a PID, then so is \(S^{-1}R\).
 \end{exercise}
 
 %\begin{solution}
@@ -26,13 +26,7 @@ Let \(G\) be a semigroup. Show that \(G\) is a group if and only if for all \(a,
 %\end{solution}
 
 \begin{exercise}
-Let \(G\) be a group.  Show that the following are equivalent:
-\begin{enumerate}[(i)]
-\item \(G\) is abelian.
-\item \((ab)^2=a^2b^2\) for all \(a,b \in G\).
-\item \((ab)^{-1}=a^{-1}b^{-1}\) for all \(a,b \in G\).
-\item \((ab)^n=a^nb^n\) for three consecutive integers \(n\) and for all \(a,b \in G\).
-\end{enumerate}
+Let \(R\) be a commutative unital ring, \(S \subset R\) a multiplicative subset, and \(I \subset R\) an ideal.  Show that \(S^{-1}\sqrt{I}=\sqrt{S^{-1}I}\) (Recall that \(\sqrt{I}=\left\{x \in R\ |\ x^n \in I\ \text{for some }n \in \mathbb{N}\right\}\)).
 \end{exercise}
 
 %\begin{solution}
@@ -41,11 +35,7 @@ Let \(G\) be a group.  Show that the following are equivalent:
 
 
 \begin{exercise}
-Let \(G\) be a semigroup. \(G\) is called \term{left cancellative} if \(ab=ac\) implies \(b=c\) (for all \(a,b,c \in G\)), and is called \term{right cancellative} if \(ba=ca\) implies \(b=c\) (again for all \(a,b,c \in G\).  A semigroup that is both left and right cancellative is just called \term{cancellative}. 
-\begin{enumerate}[(a)]
-\item Show that every finite cancellative semigroup is a group.
-\item Give an example of an infinite cancellative semigroup that is not a group.
-\end{enumerate}
+Let \(R\) be a commutative unital ring.  Show that \(R\) is local if and only if whenever \(r+s=1\), then either \(r \in R^*\) or \(s \in R^*\)
 \end{exercise}
 
 %\begin{solution}
@@ -53,48 +43,16 @@ Let \(G\) be a semigroup. \(G\) is called \term{left cancellative} if \(ab=ac\) 
 %\end{solution}
 
 \begin{exercise}
-Let \(G\) be a cyclic group. Show that every homomorphic image of \(G\) and every subgroup of \(G\) is also cyclic.
+Show that every nonzero homomorphic image of a local ring is local.
 \end{exercise}
 
 %\begin{solution}
 %Solution goes here
 %\end{solution}
 
-\begin{exercise}
-Let \(G\) be an abelian group of order \(pq\) for coprime \(p,q\in \mathbb{N}\).  Show that if \(G\) contains elements of both order \(p\) and order \(q\), then \(G\) must be cyclic.
-\end{exercise}
-
-%\begin{solution}
-%Solution goes here
-%\end{solution}
-
-\begin{exercise}
-Let \(f:G \rightarrow H\) be a group homomorphism.  Suppose \(a\in G\) such that \(f(a) \in H\) has finite order.  Show that if \(|a|\) is finite,  then \(|f(a)|\) divides \( |a|\).
-\end{exercise}
-
-%\begin{solution}
-%Solution goes here
-%\end{solution}
-
-\begin{exercise}
-Show that every group with a finite number of subgroups is itself finite.
-\end{exercise}
-
-%\begin{solution}
-%Solution goes here
-%\end{solution}
-
-
-\begin{exercise}
-Let \(H,K\) be subgroups of a group \(G\). Show that \(HK\) is a subgroup if and only if \(HK=KH\).
-\end{exercise}
-
-%\begin{solution}
-%Solution goes here
-%\end{solution}
 
 %\begin{acknowledgements}
-% Acknowledge your collaborators here. Be specific about who helped on which problems, and for whic parts.  For example, ``Jane helped me on Exercise 3. I got stuck proving X, but once she showed me the trick, I was able to finish.''
+% Acknowledge your collaborators here. Be specific about who helped on which problems, and for which parts.  For example, ``Jane helped me on Exercise 3. I got stuck proving X, but once she showed me the trick, I was able to finish.''
 %\end{acknowledgements}
 
 \end{document}
