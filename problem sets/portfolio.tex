@@ -1,0 +1,314 @@
+\documentclass{problemset}
+\usepackage{titlesec,hyperref,amscd}
+
+\renewenvironment{exercise}{\refstepcounter{exercise}
+   \noindent \textbf{Exercise~\thesection.\theexercise. }}{ \vskip-\lastskip \vspace{0.2in} }
+   
+\titleformat{\section}
+{\normalfont}
+{}
+{8pt}
+{\Large\bfseries\filcenter}
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+
+
+\DeclareMathOperator{\Frac}{Frac}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\Hom}{Hom}
+
+\DeclareMathOperator{\rad}{rad}
+
+\chead{Portfolio}
+%\renewcommand{\name}{Jane Doe}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+
+
+\section{Problem Set 1}
+
+
+\begin{exercise} Let \(R\) be an integral domain, and let \(T\) be an integral domain such that \(R \subset T \subset \Frac R\).  Show that \(\Frac R = \Frac T\).
+
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}
+Let \(R\) be an integral domain, and \(S \subset R\) a multiplicative subset that does not contain \(0\). Show that if \(R\) is a PID, then so is \(S^{-1}R\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}
+Let \(R\) be a commutative unital ring, \(S \subset R\) a multiplicative subset, and \(I \subset R\) an ideal.  Show that \(S^{-1}\sqrt{I}=\sqrt{S^{-1}I}\) (Recall that \(\sqrt{I}=\left\{x \in R\ |\ x^n \in I\ \text{for some }n \in \mathbb{N}\right\}\)).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+\begin{exercise}
+Let \(R\) be a commutative unital ring.  Show that \(R\) is local if and only if whenever \(r+s=1\), then either \(r \in R^*\) or \(s \in R^*\)
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}
+Show that every nonzero homomorphic image of a local ring is local.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\newpage
+\section{Problem Set 2}
+
+\begin{exercise} Let \(R\) be a commutative unital ring.  Show that \[M_n = \left\{ p \in R[x]\ \middle|\ \deg p < n \right\}\] is a submodule of \(R[x]\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Let \(M\) be an \(R\)-module, and \(I \subset R\) an ideal. 
+\begin{enumerate}
+\item Show that \(IM = \{ \sum _{i=1} ^n r_i m_i\ |\ n \in \mathbb{N}, r_i \in I, m_i \in M\}\) is a submodule of \(M\).
+\item Show that \(M/IM\) is an \(R/I\) module, with multiplication given by \[(r+I)(m+IM)=rm+IM\ \text{for all }r +I\in R/I, m+IM \in M/IM.\]
+\end{enumerate}
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Prove the Five Lemma: Let
+\[\begin{CD}
+A_1 @>>> A_2 @>>> A_3 @>>> A_4 @>>> A_5\\
+@VV\alpha _1V @VV\alpha _2V @VV\alpha _3V @VV\alpha _4V @VV\alpha _5V \\
+B_1 @>>> B_2 @>>> B_3 @>>> B_4 @>>> B_5\\
+\end{CD}\]
+be a commutative diagram of \(R\)-module homomorphisms with each row exact.
+\begin{enumerate}[(a)]
+\item Show that if \(\alpha _1\) is surjective, and \(\alpha _2\) and \(\alpha _4\) are injective, then \(\alpha _3\) is also injective.
+\item Show that if \(\alpha _5\) is injective, and \(\alpha _2\) and \(\alpha _4\) are surjective, then \(\alpha _3\) is also surjective.
+\end{enumerate}
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+
+\begin{exercise} 
+Let \(f: A \to A\) be an \(R\)-module homomorphism.  Show that if \(ff=f\), then \(A \cong \ker f \oplus \im f\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Let \(f: A \to B\) and \(g: B \to A\) be \(R\)-module homomorphisms.  Show that if \(gf={\rm id}\), then \(B \cong \im f \oplus \ker g\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\newpage
+\section{Problem Set 3}
+
+\begin{exercise} Let \(R\) be a ring, and \(M\) an abelian group.  Define \[\Hom _{\mathbb{Z}}(R,M)=\left\{f: R \rightarrow M\ |\ f\ \text{is a }\mathbb{Z}\text{-module homomorphism}\right\}.\]
+Show that \(\Hom _{\mathbb{Z}}(R,M)\) is an \(R\)-module with multiplication \((rf)(x)=rf(x)\) for any \(r \in R\), \(f \in \Hom _{\mathbb{Z}}(R,M)\), and \(x \in R\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Show that \(\mathbb{Q}\) is not a projective \(\mathbb{Z}\)-module.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Show that every projective abelian group is free.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Show that a direct product of \(R\)-modules \(\prod _{i \in I} J_i\)  is injective if and only if each \(J_i\) is injective.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+
+
+
+\begin{exercise} Let \(R\) be a commutative, unital ring.  Show that the following are equivalent.
+\begin{enumerate}[(i)]
+\item Every \(R\)-module is projective.
+\item Every \(R\)-module is injective.
+\item Every short exact sequence of \(R\)-modules is split exact.
+\end{enumerate}
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\newpage
+\section{Problem Set 4}
+
+\begin{exercise}If \(A\) is a finite abelian group, show that \(A \otimes _{\mathbb{Z}} \mathbb{Q} = 0\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Show that \(\mathbb{Z}_m \otimes _{\mathbb{Z}} \mathbb{Z}_n \cong \mathbb{Z}_d\), where \(d=(m,n)\).  {\bf Hint: } Write \(d=am+bn\) for some integers \(a,b\). 
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+
+\begin{exercise} Let \(M\) be an \(R\)-module, and \(I \subset R\) an ideal.  Show that \(R/I) \otimes _R M \cong M/IM\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Let \(R\) be commutative, and \(I,J \subset R\) ideals.  Show that \(R/I \otimes _R R/J \cong R/(I+J)\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise} Let \(R\) be commutative.  An \(R\)-module is called {\em flat} if tensoring with that module is left exact.  Show that every projective \(R\)-module is flat.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+\newpage
+\section{Problem Set 5}
+
+\begin{exercise}Let \(R\) be a PID, and \(I \subset R\) an ideal.  Show that \(R/I\) is both Noetherian and Artinian.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \(R\) be Noetherian, and \(P \subset R\) a prime ideal.  Show that \(R_P\) is Noetherian.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+\begin{exercise}
+Let \(R\) be an Artinian ring.  Show that every prime ideal of \(R\) is maximal.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \(R\) be a ring, \(S \subset R\) a multiplicative set, and \(I \subset R\) an ideal.  Show that \(S^{-1}(\rad I) = \rad(S^{-1}I)\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \(R\) be Noetherian, and \(I,J \subset R\) ideals with \(J \subset \rad I\).  Show that there exists \(n \in \mathbb{N}\) with \(J^n \subset I\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+
+\newpage
+\section{Problem Set 6}
+
+\begin{exercise}Let \(R\) be a ring in which every maximal ideal is of the form \(cR\) for some \(c \in R\) satisfying \(c^2=c\).  Show that \(R\) is Noetherian (\textbf{Hint:} Show that every prime ideal is maximal).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \((R, \mathfrak{M})\) be a Noetherian local ring.  Suppose that \(\mathfrak{M}/\mathfrak{M}^2\) is generated by the set \(\{a_1+\mathfrak{M}^2,\ldots,a_n+\mathfrak{M}^2\}\).  Show that \(\mathfrak{M}=a_1R+\cdots+a_nR\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \(R \subset S\) be an integral extension, and suppose that \(R\) and \(S\) are both integral domains.  Show that \(R\) is a field if and only if \(S\) is a field.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Show that if \(R \subset S\) is an integral extension, then \(S[x_1,\ldots,x_n]\) is integral over \(R[x_1,\ldots,x_n]\).
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+\begin{exercise}Let \(R\) be an integral domain with fractional field \(k\).  Show that if \(R\) is integrally closed and \(t\) is transcendental over \(k\), then \(R[t]\) is integrally closed.
+\end{exercise}
+
+%\begin{solution}
+%Solution goes here
+%\end{solution}
+
+
+
+
+
+
+\newpage
+\begin{acknowledgements}
+% Acknowledge your collaborators here. Be specific about who helped on which problems, and for which parts.  For example, ``Jane helped me on Exercise 3. I got stuck proving X, but once she showed me the trick, I was able to finish.''
+\end{acknowledgements}
+
+\end{document}
